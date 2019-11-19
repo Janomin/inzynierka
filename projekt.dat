@@ -1,0 +1,944 @@
++prog aqua urs:1
+head dyplom
+echo full
+norm en 1993-2005 unit 5
+
+!*!Label Materialy
+stee no 1 type s 235 gam 80.5  //stal s235
+stee no 2 type y 1030          //stal ciegna y1030
+conc no 3 type c 30  gam 12.5  //beton polowa wagi
+
+!*!Label Przekroje podluzne glowne
+
+sect 1   //dzwigar glowny stalowy - podparcie
+poly o mno 1
+vert no 1 y -250 z   0
+     no 2 y -250 z   500
+     no 3 y  250 z   500
+     no 4 y  250 z   0
+poly opz mno 0
+vert no 1 y -235 z   15
+     no 2 y -235 z   485
+     no 3 y -91  z   485
+     no 4 y -91  z   15
+poly o mno 0
+vert no 1 y -75  z   15
+     no 2 y -75  z   485
+     no 3 y  75  z   485
+     no 4 y  75  z   15
+
+sect 2  //dzwigar glowny stalowy
+poly o mno 1
+vert no 1 y -125 z   0
+     no 2 y -125 z   500
+     no 3 y  125 z   500
+     no 4 y  125 z   0
+poly o mno 0
+vert no 1 y -110 z   15
+     no 2 y -110 z   485
+     no 3 y  110 z   485
+     no 4 y  110 z   15
+
+!*!Label Przekroje podluzne wewnetrzne
+
+sect 3  //usztywnienie stalowe
+poly opz mno 1
+vert no 1 y -50  z  0
+     no 2 y -50  z  12
+     no 3 y -6   z  12
+     no 4 y -6   z  162
+
+sect 4  //usztywnienie stalowe z plyta skrajne lewe
+poly opz mno 1
+vert no 1 y -50  z  0
+     no 2 y -50  z  12
+     no 3 y -6   z  12
+     no 4 y -6   z  162
+poly o mno 3
+vert no 1 y  0   z   0
+     no 2 y  250 z   0
+     no 3 y  250 z  -150
+     no 4 y  0   z  -150
+
+sect 5  //usztywnienie stalowe z plyta glowne
+poly opz mno 1
+vert no 1 y -50  z  0
+     no 2 y -50  z  12
+     no 3 y -6   z  12
+     no 4 y -6   z  162
+poly o mno 3
+vert no 1 y  -250 z  0
+     no 2 y   250 z  0
+     no 3 y   250 z -150
+     no 4 y  -250 z -150
+
+sect 6  //usztywnienie stalowe z plyta skrajne prawe
+poly opz mno 1
+vert no 1 y -50  z  0
+     no 2 y -50  z  12
+     no 3 y -6   z  12
+     no 4 y -6   z  162
+poly o mno 3
+vert no 1 y  0   z  0
+     no 2 y -250 z  0
+     no 3 y -250 z -150
+     no 4 y  0   z -150
+
+!*!Label Przekroje poprzeczne
+
+sect 7 //dzwigar glowny stalowy
+poly o mno 1
+vert no 1 y -250 z  0
+     no 2 y -250 z  500
+     no 3 y  250 z  500
+     no 4 y  250 z  0
+poly o mno 0
+vert no 1 y -235 z  15
+     no 2 y -235 z  485
+     no 3 y  235 z  485
+     no 4 y  235 z  15
+
+sect 15 //wzmocnienie podstawy
+poly o mno 1
+vert no 1 y -7.5 z  15
+     no 2 y 7.5  z  15
+     no 3 y 7.5  z  485
+     no 4 y -7.5 z  485
+
+sect 8  //dwuteownik glowny stalowy
+poly opz mno 1
+vert no 1 y -75  z  0
+     no 2 y -75  z  15
+     no 3 y -7.5 z  15
+     no 4 y -7.5 z  285
+     no 5 y -75  z  285
+     no 6 y -75  z  300
+
+sect 9  //dzwigar glowny stalowy z plyta
+poly o mno 1
+vert no 1 y -250 z  0
+     no 2 y -250 z  500
+     no 3 y  250 z  500
+     no 4 y  250 z  0
+poly o mno 0
+vert no 1 y -235 z  15
+     no 2 y -235 z  485
+     no 3 y  235 z  485
+     no 4 y  235 z  15
+poly o mno 3
+vert no 1 y -250 z  0
+     no 2 y -250 z -150
+     no 3 y  250 z -150
+     no 4 y  250 z  0
+
+sect 10  //beton srodek
+poly opz mno 1
+vert no 1 y -1   z   0
+     no 2 y -1   z   1
+poly o mno 3
+vert no 1 y  -250 z  0
+     no 2 y   250 z  0
+     no 3 y   250 z -150
+     no 4 y  -250 z -150
+
+sect 11  //dwuteownik glowny stalowy z plyta
+poly opz mno 1
+vert no 1 y -75  z  0
+     no 2 y -75  z  15
+     no 3 y -7.5 z  15
+     no 4 y -7.5 z  285
+     no 5 y -75  z  285
+     no 6 y -75  z  300
+poly o mno 3
+vert no 1 y -250 z  0
+     no 2 y -250 z -150
+     no 3 y  250 z -150
+     no 4 y  250 z  0
+
+!*!Label Przekroje łukowe i elementy dodatkowe
+
+sect 12   //luk
+circ r 149.25 mno 1
+circ r 139.25 mno 0
+
+sect 13   //teznik luku
+circ r 96.85 mno 1
+circ r 86.85 mno 0
+
+sect 14   //ciegna
+circ r 41.25 mno 2
+poly o mno 1
+vert no 1 y 41 z 1
+     no 2 y 40 z 1
+     no 3 y 40 z -1
+     no 4 y 41 z -1
+
+end
+
++prog sofimsha urs:2
+head geometria
+syst 3d gdiv 1000000
+
+!*!Label Pomost-wezly
+//węzły
+//siatka pomostu
+node no 101002             x 0.25         y 0     z 0
+node no 101114             x 55.25        y 0     z 0
+
+node no (102001 102003 1)  x (0 0.25)     y 0.25  z 0
+node no (102004 102112 1)  x (0.75 0.5)   y 0.25  z 0
+node no (102113 102115 1)  x (55 0.25)    y 0.25  z 0
+
+node no 103002             x 0.25         y 0.5   z 0
+node no 103114             x 55.25        y 0.5   z 0
+
+node no (104001 104003 1)  x (0 0.25)     y 0.75  z 0
+node no (104004 104112 1)  x (0.75 0.5)   y 0.75  z 0
+node no (104113 104115 1)  x (55 0.25)    y 0.75  z 0
+
+node no (105001 105003 1)  x (0 0.25)     y 1.25  z 0
+node no (105004 105112 1)  x (0.75 0.5)   y 1.25  z 0
+node no (105113 105115 1)  x (55 0.25)    y 1.25  z 0
+
+node no (106001 106003 1)  x (0 0.25)     y 1.75  z 0
+node no (106004 106112 1)  x (0.75 0.5)   y 1.75  z 0
+node no (106113 106115 1)  x (55 0.25)    y 1.75  z 0
+
+node no (107001 107003 1)  x (0 0.25)     y 2.25  z 0
+node no (107004 107112 1)  x (0.75 0.5)   y 2.25  z 0
+node no (107113 107115 1)  x (55 0.25)    y 2.25  z 0
+
+node no (108001 108003 1)  x (0 0.25)     y 2.75  z 0
+node no (108004 108112 1)  x (0.75 0.5)   y 2.75  z 0
+node no (108113 108115 1)  x (55 0.25)    y 2.75  z 0
+
+node no (109001 109003 1)  x (0 0.25)     y 3.25  z 0
+node no (109004 109112 1)  x (0.75 0.5)   y 3.25  z 0
+node no (109113 109115 1)  x (55 0.25)    y 3.25  z 0
+
+node no (110001 110003 1)  x (0 0.25)     y 3.75  z 0
+node no (110004 110112 1)  x (0.75 0.5)   y 3.75  z 0
+node no (110113 110115 1)  x (55 0.25)    y 3.75  z 0
+
+node no (111001 111003 1)  x (0 0.25)     y 4.25  z 0
+node no (111004 111112 1)  x (0.75 0.5)   y 4.25  z 0
+node no (111113 111115 1)  x (55 0.25)    y 4.25  z 0
+
+node no (112001 112003 1)  x (0 0.25)     y 4.75  z 0
+node no (112004 112112 1)  x (0.75 0.5)   y 4.75  z 0
+node no (112113 112115 1)  x (55 0.25)    y 4.75  z 0
+
+node no (113001 113003 1)  x (0 0.25)     y 5.25  z 0
+node no (113004 113112 1)  x (0.75 0.5)   y 5.25  z 0
+node no (113113 113115 1)  x (55 0.25)    y 5.25  z 0
+
+node no (114001 114003 1)  x (0 0.25)     y 5.75  z 0
+node no (114004 114112 1)  x (0.75 0.5)   y 5.75  z 0
+node no (114113 114115 1)  x (55 0.25)    y 5.75  z 0
+
+node no 115002             x 0.25         y 6     z 0
+node no 115114             x 55.25        y 6     z 0
+
+node no (116001 116003 1)  x (0 0.25)     y 6.25  z 0
+node no (116004 116112 1)  x (0.75 0.5)   y 6.25  z 0
+node no (116113 116115 1)  x (55 0.25)    y 6.25  z 0
+
+node no 117002             x 0.25         y 6.5   z 0
+node no 117114             x 55.25        y 6.5   z 0
+
+!*!Label Luki-wezly
+//węzły łuku 1
+node no 200004             x 0.750   y 0.430   z -0.432
+node no 200005             x 1.250   y 0.607   z -0.857
+node no 200006             x 1.750   y 0.780   z -1.273
+node no 200007             x 2.250   y 0.950   z -1.682
+node no 200008             x 2.750   y 1.118   z -2.083
+node no 200009             x 3.250   y 1.281   z -2.475
+node no 200010             x 3.750   y 1.442   z -2.860
+node no 200011             x 4.250   y 1.599   z -3.237
+node no 200012             x 4.750   y 1.753   z -3.606
+node no 200013             x 5.250   y 1.903   z -3.967
+node no 200014             x 5.750   y 2.050   z -4.320
+node no 200015             x 6.250   y 2.193   z -4.665
+node no 200016             x 6.750   y 2.334   z -5.002
+node no 200017             x 7.250   y 2.472   z -5.332
+node no 200018             x 7.750   y 2.605   z -5.653
+node no 200019             x 8.250   y 2.736   z -5.966
+node no 200020             x 8.750   y 2.863   z -6.272
+node no 200021             x 9.250   y 2.987   z -6.569
+node no 200022             x 9.750   y 3.108   z -6.859
+node no 200023             x 10.250  y 3.250   z -7.200
+node no 200024             x 10.750  y 3.339   z -7.414
+node no 200025             x 11.250  y 3.450   z -7.680
+node no 200026             x 11.75   y 3.558   z -7.938
+node no 200027             x 12.25   y 3.662   z -8.188
+node no 200028             x 12.75   y 3.763   z -8.430
+node no 200029             x 13.25   y 3.860   z -8.664
+node no 200030             x 13.75   y 3.954   z -8.890
+node no 200031             x 14.25   y 4.045   z -9.108
+node no 200032             x 14.75   y 4.133   z -9.318
+node no 200033             x 15.25   y 4.217   z -9.521
+node no 200034             x 15.75   y 4.298   z -9.715
+node no 200035             x 16.25   y 4.375   z -9.901
+node no 200036             x 16.75   y 4.450   z -10.080
+node no 200037             x 17.25   y 4.521   z -10.251
+node no 200038             x 17.75   y 4.589   z -10.413
+node no 200039             x 18.25   y 4.653   z -10.568
+node no 200040             x 18.75   y 4.715   z -10.715
+node no 200041             x 19.25   y 4.773   z -10.854
+node no 200042             x 19.75   y 4.827   z -10.984
+node no 200043             x 20.25   y 4.878   z -11.107
+node no 200044             x 20.75   y 4.926   z -11.222
+node no 200045             x 21.25   y 4.971   z -11.330
+node no 200046             x 21.75   y 5.012   z -11.429
+node no 200047             x 22.25   y 5.050   z -11.520
+node no 200048             x 22.75   y 5.085   z -11.603
+node no 200049             x 23.25   y 5.116   z -11.679
+node no 200050             x 23.75   y 5.144   z -11.746
+node no 200051             x 24.25   y 5.169   z -11.806
+node no 200052             x 24.75   y 5.190   z -11.857
+node no 200053             x 25.25   y 5.209   z -11.901
+node no 200054             x 25.75   y 5.223   z -11.937
+node no 200055             x 26.25   y 5.235   z -11.964
+node no 200056             x 26.75   y 5.243   z -11.984
+node no 200057             x 27.25   y 5.248   z -11.996
+node no 200058             x 27.75   y 5.250   z -12.000
+node no 200059             x 28.25   y 5.248   z -11.996
+node no 200060             x 28.75   y 5.243   z -11.984
+node no 200061             x 29.25   y 5.235   z -11.964
+node no 200062             x 29.75   y 5.223   z -11.937
+node no 200063             x 30.25   y 5.209   z -11.901
+node no 200064             x 30.75   y 5.190   z -11.857
+node no 200065             x 31.25   y 5.169   z -11.806
+node no 200066             x 31.75   y 5.144   z -11.746
+node no 200067             x 32.25   y 5.116   z -11.679
+node no 200068             x 32.75   y 5.085   z -11.603
+node no 200069             x 33.25   y 5.050   z -11.520
+node no 200070             x 33.75   y 5.012   z -11.429
+node no 200071             x 34.25   y 4.971   z -11.330
+node no 200072             x 34.75   y 4.926   z -11.222
+node no 200073             x 35.25   y 4.878   z -11.107
+node no 200074             x 35.75   y 4.827   z -10.984
+node no 200075             x 36.25   y 4.773   z -10.854
+node no 200076             x 36.75   y 4.715   z -10.715
+node no 200077             x 37.25   y 4.653   z -10.568
+node no 200078             x 37.75   y 4.589   z -10.413
+node no 200079             x 38.25   y 4.521   z -10.251
+node no 200080             x 38.75   y 4.450   z -10.080
+node no 200081             x 39.25   y 4.375   z -9.901
+node no 200082             x 39.75   y 4.298   z -9.715
+node no 200083             x 40.25   y 4.217   z -9.521
+node no 200084             x 40.75   y 4.133   z -9.318
+node no 200085             x 41.25   y 4.045   z -9.108
+node no 200086             x 41.75   y 3.954   z -8.890
+node no 200087             x 42.25   y 3.860   z -8.664
+node no 200088             x 42.75   y 3.763   z -8.430
+node no 200089             x 43.25   y 3.662   z -8.188
+node no 200090             x 43.75   y 3.558   z -7.938
+node no 200091             x 44.25   y 3.450   z -7.680
+node no 200092             x 44.75   y 3.339   z -7.414
+node no 200093             x 45.25   y 3.250   z -7.200
+node no 200094             x 45.750  y 3.108   z -6.859
+node no 200095             x 46.250  y 2.987   z -6.569
+node no 200096             x 46.750  y 2.863   z -6.272
+node no 200097             x 47.250  y 2.736   z -5.966
+node no 200098             x 47.750  y 2.605   z -5.653
+node no 200099             x 48.250  y 2.472   z -5.332
+node no 200100             x 48.750  y 2.334   z -5.002
+node no 200101             x 49.250  y 2.193   z -4.665
+node no 200102             x 49.750  y 2.050   z -4.320
+node no 200103             x 50.250  y 1.903   z -3.967
+node no 200104             x 50.750  y 1.753   z -3.606
+node no 200105             x 51.250  y 1.599   z -3.237
+node no 200106             x 51.750  y 1.442   z -2.860
+node no 200107             x 52.250  y 1.281   z -2.475
+node no 200108             x 52.750  y 1.118   z -2.083
+node no 200109             x 53.250  y 0.950   z -1.682
+node no 200110             x 53.750  y 0.780   z -1.273
+node no 200111             x 54.250  y 0.607   z -0.857
+node no 200112             x 54.750  y 0.430   z -0.432
+
+//węzły łuku 2
+node no 300004             x 0.750   y 6.070   z -0.432
+node no 300005             x 1.250   y 5.893   z -0.857
+node no 300006             x 1.750   y 5.720   z -1.273
+node no 300007             x 2.250   y 5.550   z -1.682
+node no 300008             x 2.750   y 5.382   z -2.083
+node no 300009             x 3.250   y 5.219   z -2.475
+node no 300010             x 3.750   y 5.058   z -2.860
+node no 300011             x 4.250   y 4.901   z -3.237
+node no 300012             x 4.750   y 4.747   z -3.606
+node no 300013             x 5.250   y 4.597   z -3.967
+node no 300014             x 5.750   y 4.450   z -4.320
+node no 300015             x 6.250   y 4.307   z -4.665
+node no 300016             x 6.750   y 4.166   z -5.002
+node no 300017             x 7.250   y 4.028   z -5.332
+node no 300018             x 7.750   y 3.895   z -5.653
+node no 300019             x 8.250   y 3.764   z -5.966
+node no 300020             x 8.750   y 3.637   z -6.272
+node no 300021             x 9.250   y 3.513   z -6.569
+node no 300022             x 9.750   y 3.392   z -6.859
+node no 300023             x 10.250  y 3.250   z -7.200
+node no 300024             x 10.750  y 3.161   z -7.414
+node no 300025             x 11.250  y 3.050   z -7.680
+node no 300026             x 11.75   y 2.942   z -7.938
+node no 300027             x 12.25   y 2.838   z -8.188
+node no 300028             x 12.75   y 2.737   z -8.430
+node no 300029             x 13.25   y 2.640   z -8.664
+node no 300030             x 13.75   y 2.546   z -8.890
+node no 300031             x 14.25   y 2.455   z -9.108
+node no 300032             x 14.75   y 2.367   z -9.318
+node no 300033             x 15.25   y 2.283   z -9.521
+node no 300034             x 15.75   y 2.202   z -9.715
+node no 300035             x 16.25   y 2.125   z -9.901
+node no 300036             x 16.75   y 2.050   z -10.080
+node no 300037             x 17.25   y 1.979   z -10.251
+node no 300038             x 17.75   y 1.911   z -10.413
+node no 300039             x 18.25   y 1.847   z -10.568
+node no 300040             x 18.75   y 1.785   z -10.715
+node no 300041             x 19.25   y 1.727   z -10.854
+node no 300042             x 19.75   y 1.673   z -10.984
+node no 300043             x 20.25   y 1.622   z -11.107
+node no 300044             x 20.75   y 1.574   z -11.222
+node no 300045             x 21.25   y 1.529   z -11.330
+node no 300046             x 21.75   y 1.488   z -11.429
+node no 300047             x 22.25   y 1.450   z -11.520
+node no 300048             x 22.75   y 1.415   z -11.603
+node no 300049             x 23.25   y 1.384   z -11.679
+node no 300050             x 23.75   y 1.356   z -11.746
+node no 300051             x 24.25   y 1.331   z -11.806
+node no 300052             x 24.75   y 1.310   z -11.857
+node no 300053             x 25.25   y 1.291   z -11.901
+node no 300054             x 25.75   y 1.277   z -11.937
+node no 300055             x 26.25   y 1.265   z -11.964
+node no 300056             x 26.75   y 1.257   z -11.984
+node no 300057             x 27.25   y 1.252   z -11.996
+node no 300058             x 27.75   y 1.250   z -12.000
+node no 300059             x 28.25   y 1.252   z -11.996
+node no 300060             x 28.75   y 1.257   z -11.984
+node no 300061             x 29.25   y 1.265   z -11.964
+node no 300062             x 29.75   y 1.277   z -11.937
+node no 300063             x 30.25   y 1.291   z -11.901
+node no 300064             x 30.75   y 1.310   z -11.857
+node no 300065             x 31.25   y 1.331   z -11.806
+node no 300066             x 31.75   y 1.356   z -11.746
+node no 300067             x 32.25   y 1.384   z -11.679
+node no 300068             x 32.75   y 1.415   z -11.603
+node no 300069             x 33.25   y 1.450   z -11.520
+node no 300070             x 33.75   y 1.488   z -11.429
+node no 300071             x 34.25   y 1.529   z -11.330
+node no 300072             x 34.75   y 1.574   z -11.222
+node no 300073             x 35.25   y 1.622   z -11.107
+node no 300074             x 35.75   y 1.673   z -10.984
+node no 300075             x 36.25   y 1.727   z -10.854
+node no 300076             x 36.75   y 1.785   z -10.715
+node no 300077             x 37.25   y 1.847   z -10.568
+node no 300078             x 37.75   y 1.911   z -10.413
+node no 300079             x 38.25   y 1.979   z -10.251
+node no 300080             x 38.75   y 2.050   z -10.080
+node no 300081             x 39.25   y 2.125   z -9.901
+node no 300082             x 39.75   y 2.202   z -9.715
+node no 300083             x 40.25   y 2.283   z -9.521
+node no 300084             x 40.75   y 2.367   z -9.318
+node no 300085             x 41.25   y 2.455   z -9.108
+node no 300086             x 41.75   y 2.546   z -8.890
+node no 300087             x 42.25   y 2.640   z -8.664
+node no 300088             x 42.75   y 2.737   z -8.430
+node no 300089             x 43.25   y 2.838   z -8.188
+node no 300090             x 43.75   y 2.942   z -7.938
+node no 300091             x 44.25   y 3.050   z -7.680
+node no 300092             x 44.75   y 3.161   z -7.414
+node no 300093             x 45.25   y 3.250   z -7.200
+node no 300094             x 45.75   y 3.392   z -6.859
+node no 300095             x 46.25   y 3.513   z -6.569
+node no 300096             x 46.75   y 3.637   z -6.272
+node no 300097             x 47.25   y 3.764   z -5.966
+node no 300098             x 47.75   y 3.895   z -5.653
+node no 300099             x 48.25   y 4.028   z -5.332
+node no 300100             x 48.75   y 4.166   z -5.002
+node no 300101             x 49.25   y 4.307   z -4.665
+node no 300102             x 49.75   y 4.450   z -4.320
+node no 300103             x 50.25   y 4.597   z -3.967
+node no 300104             x 50.75   y 4.747   z -3.606
+node no 300105             x 51.25   y 4.901   z -3.237
+node no 300106             x 51.75   y 5.058   z -2.860
+node no 300107             x 52.25   y 5.219   z -2.475
+node no 300108             x 52.75   y 5.382   z -2.083
+node no 300109             x 53.25   y 5.550   z -1.682
+node no 300110             x 53.75   y 5.720   z -1.273
+node no 300111             x 54.25   y 5.893   z -0.857
+node no 300112             x 54.75   y 6.070   z -0.432
+
+//teznik  1
+node no (406043 412043 1000)  x 20.25  y (1.750 0.5)  z -11.107
+//teznik  1
+node no (406058 412058 1000)  x 27.75  y (1.750 0.5)  z -12.000
+//teznik  1
+node no (406073 412073 1000)  x 35.25  y (1.750 0.5)  z -11.107
+
+!*!Label Podluznice
+grp 1
+//podluznica glowna lewa
+beam no (2001 2002 1) NA (102001 1) NE (102002 1) NCS 1   ZA 0.2500 ZE 0.2500
+beam no 2003          NA 102003     NE 102004     NCS 1.2 ZA 0.2500 ZE 0.2500
+beam no (2004 2111 1) NA (102004 1) NE (102005 1) NCS 2   ZA 0.2500 ZE 0.2500
+beam no 2112          NA 102112     NE 102113     NCS 2.1 ZA 0.2500 ZE 0.2500
+beam no (2113 2114 1) NA (102113 1) NE (102114 1) NCS 1   ZA 0.2500 ZE 0.2500
+
+//podluznica stalowa wewnetrzna lewa
+beam no (4001 4113 1) NA (104001 1) NE (104002 1) NCS 3 ZA 0.0546 ZE 0.0546
+
+//pomost zespolony
+beam no (5001 5114 1)   NA (105001 1) NE (105002 1) NCS 4 YA 0.0827  ZA -0.0311 YE 0.0827 ZE -0.0311
+beam no (6001 6114 1)   NA (106001 1) NE (106002 1) NCS 5 ZA -0.0486 ZE -0.0486
+beam no (7001 7114 1)   NA (107001 1) NE (107002 1) NCS 5 ZA -0.0486 ZE -0.0486
+beam no (8001 8114 1)   NA (108001 1) NE (108002 1) NCS 5 ZA -0.0486 ZE -0.0486
+beam no (9001 9114 1)   NA (109001 1) NE (109002 1) NCS 5 ZA -0.0486 ZE -0.0486
+beam no (10001 10114 1) NA (110001 1) NE (110002 1) NCS 5 ZA -0.0486 ZE -0.0486
+beam no (11001 11114 1) NA (111001 1) NE (111002 1) NCS 5 ZA -0.0486 ZE -0.0486
+beam no (12001 12114 1) NA (112001 1) NE (112002 1) NCS 5 ZA -0.0486 ZE -0.0486
+beam no (13001 13114 1) NA (113001 1) NE (113002 1) NCS 6 YA -0.0827 ZA -0.0311 YE -0.0827 ZE -0.0311
+
+//podluznica stalowa wewnetrzna prawa
+beam no (14001 14113 1) NA (114001 1) NE (114002 1) NCS 3 ZA 0.0546 ZE 0.0546
+
+//podłużnica glowna prawa
+beam no (16001 16002 1) NA (116001 1) NE (116002 1) NCS 1   ZA 0.2500 ZE 0.2500
+beam no 16003           NA 116003     NE 116004     NCS 1.2 ZA 0.2500 ZE 0.2500
+beam no (16004 16111 1) NA (116004 1) NE (116005 1) NCS 2   ZA 0.2500 ZE 0.2500
+beam no 16112           NA 116112     NE 116113     NCS 2.1 ZA 0.2500 ZE 0.2500
+beam no (16113 16114 1) NA (116113 1) NE (116114 1) NCS 1   ZA 0.2500 ZE 0.2500
+
+!*!Label Poprzecznice
+grp 2
+//poprzecznice
+//glowna lewa
+beam no (201 202 1) NA (101002 1000) NE (102002 1000) NCS 15  XA -0.2425 ZA 0.2500 XE -0.2425 ZE 0.2500
+beam no (203 204 1) NA (103002 1000) NE (104002 1000) NCS 7   ZA 0.2500 ZE 0.2500
+beam no (205 212 1) NA (105002 1000) NE (106002 1000) NCS 9   ZA 0.1566 ZE 0.1566
+beam no (213 214 1) NA (113002 1000) NE (114002 1000) NCS 7   ZA 0.2500 ZE 0.2500
+beam no (215 216 1) NA (115002 1000) NE (116002 1000) NCS 15  XA -0.2425 ZA 0.2500 XE -0.2425 ZE 0.2500
+
+//plyta betonowa
+beam no (405 412 1) NA (105004 1000) NE (106004 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (505 512 1) NA (105005 1000) NE (106005 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (605 612 1) NA (105006 1000) NE (106006 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (705 712 1) NA (105007 1000) NE (106007 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 802         NA 102008        NE 104008        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 804         NA 104008        NE 105008        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (805 812 1) NA (105008 1000) NE (106008 1000) NCS 11 ZA 0.0199 ZE 0.0199
+beam no 813         NA 113008        NE 114008        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 814         NA 114008        NE 116008        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (905 912 1)   NA (105009 1000) NE (106009 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (1005 1012 1) NA (105010 1000) NE (106010 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (1105 1112 1) NA (105011 1000) NE (106011 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (1205 1212 1) NA (105012 1000) NE (106012 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 1302          NA 102013        NE 104013         NCS 8  ZA 0.1500 ZE 0.1500
+beam no 1304          NA 104013        NE 105013         NCS 8  ZA 0.1500 ZE 0.1500
+beam no (1305 1312 1) NA (105013 1000) NE (106013 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 1313          NA 113013        NE 114013         NCS 8  ZA 0.1500 ZE 0.1500
+beam no 1314          NA 114013        NE 116013         NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (1405 1412 1) NA (105014 1000) NE (106014 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (1505 1512 1) NA (105015 1000) NE (106015 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (1605 1612 1) NA (105016 1000) NE (106016 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (1705 1712 1) NA (105017 1000) NE (106017 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 1802          NA 102018        NE 104018        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 1804          NA 104018        NE 105018        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (1805 1812 1) NA (105018 1000) NE (106018 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 1813          NA 113018        NE 114018        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 1814          NA 114018        NE 116018        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (1905 1912 1) NA (105019 1000) NE (106019 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (2005 2012 1) NA (105020 1000) NE (106020 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (2105 2112 1) NA (105021 1000) NE (106021 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (2205 2212 1) NA (105022 1000) NE (106022 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 2302          NA 102023        NE 104023        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 2304          NA 104023        NE 105023        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (2305 2312 1) NA (105023 1000) NE (106023 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 2313          NA 113023        NE 114023        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 2314          NA 114023        NE 116023        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (2405 2412 1) NA (105024 1000) NE (106024 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (2505 2512 1) NA (105025 1000) NE (106025 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (2605 2612 1) NA (105026 1000) NE (106026 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (2705 2712 1) NA (105027 1000) NE (106027 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 2802          NA 102028        NE 104028        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 2804          NA 104028        NE 105028        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (2805 2812 1) NA (105028 1000) NE (106028 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 2813          NA 113028        NE 114028        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 2814          NA 114028        NE 116028        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (2905 2912 1) NA (105029 1000) NE (106029 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (3005 3012 1) NA (105030 1000) NE (106030 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (3105 3112 1) NA (105031 1000) NE (106031 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (3205 3212 1) NA (105032 1000) NE (106032 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 3302          NA 102033        NE 104033        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 3304          NA 104033        NE 105033        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (3305 3312 1) NA (105033 1000) NE (106033 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 3313          NA 113033        NE 114033        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 3314          NA 114033        NE 116033        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (3405 3412 1) NA (105034 1000) NE (106034 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (3505 3512 1) NA (105035 1000) NE (106035 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (3605 3612 1) NA (105036 1000) NE (106036 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (3705 3712 1) NA (105037 1000) NE (106037 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 3802          NA 102038        NE 104038        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 3804          NA 104038        NE 105038        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (3805 3812 1) NA (105038 1000) NE (106038 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 3813          NA 113038        NE 114038        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 3814          NA 114038        NE 116038        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (3905 3912 1) NA (105039 1000) NE (106039 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (4005 4012 1) NA (105040 1000) NE (106040 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (4105 4112 1) NA (105041 1000) NE (106041 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (4205 4212 1) NA (105042 1000) NE (106042 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 4302          NA 102043        NE 104043        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 4304          NA 104043        NE 105043        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (4305 4312 1) NA (105043 1000) NE (106043 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 4313          NA 113043        NE 114043        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 4314          NA 114043        NE 116043        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (4405 4412 1) NA (105044 1000) NE (106044 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (4505 4512 1) NA (105045 1000) NE (106045 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (4605 4612 1) NA (105046 1000) NE (106046 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (4705 4712 1) NA (105047 1000) NE (106047 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 4802          NA 102048        NE 104048        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 4804          NA 104048        NE 105048        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (4805 4812 1) NA (105048 1000) NE (106048 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 4813          NA 113048        NE 114048        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 4814          NA 114048        NE 116048        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (4905 4912 1) NA (105049 1000) NE (106049 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (5005 5012 1) NA (105050 1000) NE (106050 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (5105 5112 1) NA (105051 1000) NE (106051 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (5205 5212 1) NA (105052 1000) NE (106052 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 5302          NA 102053        NE 104053        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 5304          NA 104053        NE 105053        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (5305 5312 1) NA (105053 1000) NE (106053 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 5313          NA 113053        NE 114053        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 5314          NA 114053        NE 116053        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (5405 5412 1) NA (105054 1000) NE (106054 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (5505 5512 1) NA (105055 1000) NE (106055 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (5605 5612 1) NA (105056 1000) NE (106056 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (5705 5712 1) NA (105057 1000) NE (106057 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 5802          NA 102058        NE 104058        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 5804          NA 104058        NE 105058        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (5805 5812 1) NA (105058 1000) NE (106058 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 5813          NA 113058        NE 114058        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 5814          NA 114058        NE 116058        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (5905 5912 1) NA (105059 1000) NE (106059 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (6005 6012 1) NA (105060 1000) NE (106060 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (6105 6112 1) NA (105061 1000) NE (106061 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (6205 6212 1) NA (105062 1000) NE (106062 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 6302          NA 102063        NE 104063        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 6304          NA 104063        NE 105063        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (6305 6312 1) NA (105063 1000) NE (106063 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 6313          NA 113063        NE 114063        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 6314          NA 114063        NE 116063        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (6405 6412 1) NA (105064 1000) NE (106064 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (6505 6512 1) NA (105065 1000) NE (106065 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (6605 6612 1) NA (105066 1000) NE (106066 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (6705 6712 1) NA (105067 1000) NE (106067 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 6802          NA 102068        NE 104068        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 6804          NA 104068        NE 105068        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (6805 6812 1) NA (105068 1000) NE (106068 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 6813          NA 113068        NE 114068        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 6814          NA 114068        NE 116068        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (6905 6912 1) NA (105069 1000) NE (106069 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (7005 7012 1) NA (105070 1000) NE (106070 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (7105 7112 1) NA (105071 1000) NE (106071 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (7205 7212 1) NA (105072 1000) NE (106072 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 7302          NA 102073        NE 104073        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 7304          NA 104073        NE 105073        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (7305 7312 1) NA (105073 1000) NE (106073 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 7313          NA 113073        NE 114073        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 7314          NA 114073        NE 116073        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (7405 7412 1) NA (105074 1000) NE (106074 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (7505 7512 1) NA (105075 1000) NE (106075 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (7605 7612 1) NA (105076 1000) NE (106076 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (7705 7712 1) NA (105077 1000) NE (106077 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 7802          NA 102078        NE 104078        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 7804          NA 104078        NE 105078        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (7805 7812 1) NA (105078 1000) NE (106078 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 7813          NA 113078        NE 114078        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 7814          NA 114078        NE 116078        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (7905 7912 1) NA (105079 1000) NE (106079 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (8005 8012 1) NA (105080 1000) NE (106080 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (8105 8112 1) NA (105081 1000) NE (106081 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (8205 8212 1) NA (105082 1000) NE (106082 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 8302          NA 102083        NE 104083        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 8304          NA 104083        NE 105083        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (8305 8312 1) NA (105083 1000) NE (106083 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 8313          NA 113083        NE 114083        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 8314          NA 114083        NE 116083        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (8405 8412 1) NA (105084 1000) NE (106084 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (8505 8512 1) NA (105085 1000) NE (106085 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (8605 8612 1) NA (105086 1000) NE (106086 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (8705 8712 1) NA (105087 1000) NE (106087 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 8802          NA 102088        NE 104088        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 8804          NA 104088        NE 105088        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (8805 8812 1) NA (105088 1000) NE (106088 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 8813          NA 113088        NE 114088        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 8814          NA 114088        NE 116088        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (8905 8912 1) NA (105089 1000) NE (106089 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (9005 9012 1) NA (105090 1000) NE (106090 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (9105 9112 1) NA (105091 1000) NE (106091 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (9205 9212 1) NA (105092 1000) NE (106092 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 9302          NA 102093        NE 104093        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 9304          NA 104093        NE 105093        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (9305 9312 1) NA (105093 1000) NE (106093 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 9313          NA 113093        NE 114093        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 9314          NA 114093        NE 116093        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (9405 9412 1) NA (105094 1000) NE (106094 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (9505 9512 1) NA (105095 1000) NE (106095 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (9605 9612 1) NA (105096 1000) NE (106096 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (9705 9712 1) NA (105097 1000) NE (106097 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 9802          NA 102098        NE 104098        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 9804          NA 104098        NE 105098        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (9805 9812 1) NA (105098 1000) NE (106098 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 9813          NA 113098        NE 114098        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 9814          NA 114098        NE 116098        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (9905 9912 1)   NA (105099 1000) NE (106099 1000)  NCS 10  ZA -0.0750 ZE -0.0750
+beam no (10005 10012 1) NA (105100 1000) NE (106100 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (10105 10112 1) NA (105101 1000) NE (106101 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (10205 10212 1) NA (105102 1000) NE (106102 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 10302           NA 102103        NE 104103        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 10304           NA 104103        NE 105103        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (10305 10312 1) NA (105103 1000) NE (106103 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 10313           NA 113103        NE 114103        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 10314           NA 114103        NE 116103        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (10405 10412 1) NA (105104 1000) NE (106104 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (10505 10512 1) NA (105105 1000) NE (106105 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (10605 10612 1) NA (105106 1000) NE (106106 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (10705 10712 1) NA (105107 1000) NE (106107 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//dwuteownik
+beam no 10802           NA 102108        NE 104108        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 10804           NA 104108        NE 105108        NCS 8  ZA 0.1500 ZE 0.1500
+beam no (10805 10812 1) NA (105108 1000) NE (106108 1000) NCS 11  ZA 0.0199 ZE 0.0199
+beam no 10813           NA 113108        NE 114108        NCS 8  ZA 0.1500 ZE 0.1500
+beam no 10814           NA 114108        NE 116108        NCS 8  ZA 0.1500 ZE 0.1500
+
+//plyta betonowa
+beam no (10905 10912 1) NA (105109 1000) NE (106109 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (11005 11012 1) NA (105110 1000) NE (106110 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (11105 11112 1) NA (105111 1000) NE (106111 1000) NCS 10  ZA -0.0750 ZE -0.0750
+beam no (11205 11212 1) NA (105112 1000) NE (106112 1000) NCS 10  ZA -0.0750 ZE -0.0750
+
+//glowna prawa
+beam no (11601 11602 1) NA (101114 1000) NE (102114 1000) NCS 15  XA 0.2425 ZA 0.2500 XE 0.2425 ZE 0.2500
+beam no (11603 11604 1) NA (103114 1000) NE (104114 1000) NCS 7   ZA 0.2500 ZE 0.2500
+beam no (11605 11612 1) NA (105114 1000) NE (106114 1000) NCS 9   ZA 0.1566 ZE 0.1566
+beam no (11613 11614 1) NA (113114 1000) NE (114114 1000) NCS 7   ZA 0.2500 ZE 0.2500
+beam no (11615 11616 1) NA (115114 1000) NE (116114 1000) NCS 15  XA 0.2425 ZA 0.2500 XE 0.2425 ZE 0.2500
+
+!*!Label Luki
+//luki
+grp 4
+beam no 1002          NA 102002     NE 200004     NCS 12
+beam no (1003 1110 1) NA (200004 1) NE (200005 1) NCS 12
+beam no 1112          NA 200112     NE 102114     NCS 12
+
+beam no 2002          NA 116002     NE 300004     NCS 12
+beam no (2003 2021 1) NA (300004 1) NE (300005 1) NCS 12
+beam no 2022          NA 300022     NE 200023     NCS 12
+beam no 2023          NA 200023     NE 300024     NCS 12
+beam no (2024 2091 1) NA (300024 1) NE (300025 1) NCS 12
+beam no 2092          NA 300092     NE 200093     NCS 12
+beam no 2093          NA 200093     NE 300094     NCS 12
+beam no (2094 2111 1) NA (300094 1) NE (300095 1) NCS 12
+beam no 2112          NA 300112     NE 116114     NCS 12
+
+//teznik 1
+beam no 3005          NA 300043        NE 406043        NCS 13
+beam no (3006 3011 1) NA (406043 1000) NE (407043 1000) NCS 13
+beam no 3012          NA 412043        NE 200043        NCS 13
+
+//teznik 2
+beam no 4005          NA 300058        NE 406058        NCS 13
+beam no (4006 4011 1) NA (406058 1000) NE (407058 1000) NCS 13
+beam no 4012          NA 412058        NE 200058        NCS 13
+
+//teznik 2
+beam no 5005          NA 300073        NE 406073        NCS 13
+beam no (5006 5011 1) NA (406073 1000) NE (407073 1000) NCS 13
+beam no 5012          NA 412073        NE 200073        NCS 13
+
+!*!Label ciegna
+grp 5
+//strona prawa
+cabl NO 1  NA 200008 NE 102013 NCS 14   //1
+cabl NO 2  NA 200013 NE 102018 NCS 14   //2
+cabl NO 3  NA 200018 NE 102028 NCS 14   //3
+cabl NO 4  NA 300028 NE 102038 NCS 14   //4
+cabl NO 5  NA 300038 NE 102048 NCS 14   //5
+cabl NO 6  NA 300048 NE 102058 NCS 14   //6
+cabl NO 7  NA 300058 NE 102068 NCS 14   //7
+cabl NO 8  NA 300068 NE 102078 NCS 14   //8
+cabl NO 9  NA 300078 NE 102088 NCS 14   //9
+cabl NO 10 NA 300088 NE 102098 NCS 14   //10
+
+cabl NO 11 NA 102018 NE 300028 NCS 14   //11
+cabl NO 12 NA 102028 NE 300038 NCS 14   //12
+cabl NO 13 NA 102038 NE 300048 NCS 14   //13
+cabl NO 14 NA 102048 NE 300058 NCS 14   //14
+cabl NO 15 NA 102058 NE 300068 NCS 14   //15
+cabl NO 16 NA 102068 NE 300078 NCS 14   //16
+cabl NO 17 NA 102078 NE 300088 NCS 14   //17
+cabl NO 18 NA 102088 NE 200098 NCS 14   //18
+cabl NO 19 NA 102098 NE 200103 NCS 14   //19
+cabl NO 20 NA 102103 NE 200108 NCS 14   //20
+
+//strona prawa
+cabl NO 21 NA 300008 NE 116013 NCS 14   //21
+cabl NO 22 NA 300013 NE 116018 NCS 14   //22
+cabl NO 23 NA 300018 NE 116028 NCS 14   //23
+cabl NO 24 NA 200028 NE 116038 NCS 14   //24
+cabl NO 25 NA 200038 NE 116048 NCS 14   //25
+cabl NO 26 NA 200048 NE 116058 NCS 14   //26
+cabl NO 27 NA 200058 NE 116068 NCS 14   //27
+cabl NO 28 NA 200068 NE 116078 NCS 14   //28
+cabl NO 29 NA 200078 NE 116088 NCS 14   //29
+cabl NO 30 NA 200088 NE 116098 NCS 14   //30
+
+cabl NO 31 NA 116018 NE 200028 NCS 14   //31
+cabl NO 32 NA 116028 NE 200038 NCS 14   //32
+cabl NO 33 NA 116038 NE 200048 NCS 14   //33
+cabl NO 34 NA 116048 NE 200058 NCS 14   //34
+cabl NO 35 NA 116058 NE 200068 NCS 14   //35
+cabl NO 36 NA 116068 NE 200078 NCS 14   //36
+cabl NO 37 NA 116078 NE 200088 NCS 14   //37
+cabl NO 38 NA 116088 NE 300098 NCS 14   //38
+cabl NO 39 NA 116098 NE 300103 NCS 14   //39
+cabl NO 40 NA 116103 NE 300108 NCS 14   //40
+
+!*!Label podparcie
+grp 6
+//offset
+node no 1  x 0.25  y 0.25 z 0.5
+node no 2  x 0.25  y 6.25 z 0.5
+node no 3  x 55.25 y 0.25 z 0.5
+node no 4  x 55.25 y 6.25 z 0.5
+
+//sprzezenie
+node no 102002  nr1 1 fix kf
+node no 116002  nr1 2 fix kf
+node no 102114  nr1 3 fix kf
+node no 116114  nr1 4 fix kf
+
+//redefinicja węzłów
+node no 1  fix pp
+node no 2  fix yp
+node no 3  fix xp
+node no 4  fix pz
+
+end
+
++prog ase urs:3
+head ciezar_wlasny
+
+lc no 1 fact 1 dlz 1 titl ciezar_wlasny
+
+end
++prog sofiload urs:4
+head  obciazenia_dodatkowe
+
+//obciążenia dodatkowe
+lc 2 //bariera
+beam (1005001 1005114 1) type pzz pa 0.5 pe 0.5
+beam (1013001 1013114 1) type pzz pa 0.5 pe 0.5
+
+lc 3 //warstwa żywicy
+beam (1005001 1005114 1) type pzz pa 0.018 pe 0.018
+beam (1006001 1006114 1) type pzz pa 0.037 pe 0.037
+beam (1007001 1007114 1) type pzz pa 0.037 pe 0.037
+beam (1008001 1008114 1) type pzz pa 0.037 pe 0.037
+beam (1009001 1009114 1) type pzz pa 0.037 pe 0.037
+beam (1010001 1010114 1) type pzz pa 0.037 pe 0.037
+beam (1011001 1011114 1) type pzz pa 0.037 pe 0.037
+beam (1012001 1012114 1) type pzz pa 0.037 pe 0.037
+beam (1013001 1013114 1) type pzz pa 0.018 pe 0.018
+
+end
+
++prog ase urs:5
+head przeliczenie_obc_dodatkowe
+
+lc no (2 3 1)  titl Dodatkowe
+
+end
+
+
