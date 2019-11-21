@@ -98,21 +98,14 @@ vert no 1 y -235 z  15
      no 3 y  235 z  485
      no 4 y  235 z  15
 
-sect 15 //wzmocnienie podstawy
-poly o mno 1
-vert no 1 y -7.5 z  15
-     no 2 y 7.5  z  15
-     no 3 y 7.5  z  485
-     no 4 y -7.5 z  485
-
 sect 8  //dwuteownik glowny stalowy
 poly opz mno 1
-vert no 1 y -75  z  0
-     no 2 y -75  z  15
-     no 3 y -7.5 z  15
-     no 4 y -7.5 z  285
-     no 5 y -75  z  285
-     no 6 y -75  z  300
+vert no 1 y -100  z  0
+     no 2 y -100  z  20
+     no 3 y -7.5  z  20
+     no 4 y -7.5  z  280
+     no 5 y -100  z  280
+     no 6 y -100  z  300
 
 sect 9  //dzwigar glowny stalowy z plyta
 poly o mno 1
@@ -143,12 +136,12 @@ vert no 1 y  -250 z  0
 
 sect 11  //dwuteownik glowny stalowy z plyta
 poly opz mno 1
-vert no 1 y -75  z  0
-     no 2 y -75  z  15
-     no 3 y -7.5 z  15
-     no 4 y -7.5 z  285
-     no 5 y -75  z  285
-     no 6 y -75  z  300
+vert no 1 y -100  z  0
+     no 2 y -100  z  20
+     no 3 y -7.5  z  20
+     no 4 y -7.5  z  280
+     no 5 y -100  z  280
+     no 6 y -100  z  300
 poly o mno 3
 vert no 1 y -250 z  0
      no 2 y -250 z -150
@@ -159,7 +152,7 @@ vert no 1 y -250 z  0
 
 sect 12   //luk
 circ r 149.25 mno 1
-circ r 139.25 mno 0
+circ r 136.75 mno 0
 
 sect 13   //teznik luku
 circ r 96.85 mno 1
@@ -267,9 +260,9 @@ node no 200019             x 8.250   y 2.736   z -5.966
 node no 200020             x 8.750   y 2.863   z -6.272
 node no 200021             x 9.250   y 2.987   z -6.569
 node no 200022             x 9.750   y 3.108   z -6.859
-node no 200023             x 10.250  y 3.250   z -7.200
-node no 200024             x 10.750  y 3.339   z -7.414
-node no 200025             x 11.250  y 3.450   z -7.680
+node no 200023             x 10.359  y 3.250   z -7.200
+node no 200024             x 10.75   y 3.339   z -7.414
+node no 200025             x 11.25   y 3.450   z -7.680
 node no 200026             x 11.75   y 3.558   z -7.938
 node no 200027             x 12.25   y 3.662   z -8.188
 node no 200028             x 12.75   y 3.763   z -8.430
@@ -337,26 +330,26 @@ node no 200089             x 43.25   y 3.662   z -8.188
 node no 200090             x 43.75   y 3.558   z -7.938
 node no 200091             x 44.25   y 3.450   z -7.680
 node no 200092             x 44.75   y 3.339   z -7.414
-node no 200093             x 45.25   y 3.250   z -7.200
-node no 200094             x 45.750  y 3.108   z -6.859
-node no 200095             x 46.250  y 2.987   z -6.569
-node no 200096             x 46.750  y 2.863   z -6.272
-node no 200097             x 47.250  y 2.736   z -5.966
-node no 200098             x 47.750  y 2.605   z -5.653
-node no 200099             x 48.250  y 2.472   z -5.332
-node no 200100             x 48.750  y 2.334   z -5.002
-node no 200101             x 49.250  y 2.193   z -4.665
-node no 200102             x 49.750  y 2.050   z -4.320
-node no 200103             x 50.250  y 1.903   z -3.967
-node no 200104             x 50.750  y 1.753   z -3.606
-node no 200105             x 51.250  y 1.599   z -3.237
-node no 200106             x 51.750  y 1.442   z -2.860
-node no 200107             x 52.250  y 1.281   z -2.475
-node no 200108             x 52.750  y 1.118   z -2.083
-node no 200109             x 53.250  y 0.950   z -1.682
-node no 200110             x 53.750  y 0.780   z -1.273
-node no 200111             x 54.250  y 0.607   z -0.857
-node no 200112             x 54.750  y 0.430   z -0.432
+node no 200093             x 45.14   y 3.250   z -7.200
+node no 200094             x 45.75   y 3.108   z -6.859
+node no 200095             x 46.25   y 2.987   z -6.569
+node no 200096             x 46.75   y 2.863   z -6.272
+node no 200097             x 47.25   y 2.736   z -5.966
+node no 200098             x 47.75   y 2.605   z -5.653
+node no 200099             x 48.25   y 2.472   z -5.332
+node no 200100             x 48.75   y 2.334   z -5.002
+node no 200101             x 49.25   y 2.193   z -4.665
+node no 200102             x 49.75   y 2.050   z -4.320
+node no 200103             x 50.25   y 1.903   z -3.967
+node no 200104             x 50.75   y 1.753   z -3.606
+node no 200105             x 51.25   y 1.599   z -3.237
+node no 200106             x 51.75   y 1.442   z -2.860
+node no 200107             x 52.25   y 1.281   z -2.475
+node no 200108             x 52.75   y 1.118   z -2.083
+node no 200109             x 53.25   y 0.950   z -1.682
+node no 200110             x 53.75   y 0.780   z -1.273
+node no 200111             x 54.25   y 0.607   z -0.857
+node no 200112             x 54.75   y 0.430   z -0.432
 
 //węzły łuku 2
 node no 300004             x 0.750   y 6.070   z -0.432
@@ -378,9 +371,9 @@ node no 300019             x 8.250   y 3.764   z -5.966
 node no 300020             x 8.750   y 3.637   z -6.272
 node no 300021             x 9.250   y 3.513   z -6.569
 node no 300022             x 9.750   y 3.392   z -6.859
-node no 300023             x 10.250  y 3.250   z -7.200
-node no 300024             x 10.750  y 3.161   z -7.414
-node no 300025             x 11.250  y 3.050   z -7.680
+node no 300023             x 10.359  y 3.250   z -7.200
+node no 300024             x 10.75   y 3.161   z -7.414
+node no 300025             x 11.25   y 3.050   z -7.680
 node no 300026             x 11.75   y 2.942   z -7.938
 node no 300027             x 12.25   y 2.838   z -8.188
 node no 300028             x 12.75   y 2.737   z -8.430
@@ -448,7 +441,7 @@ node no 300089             x 43.25   y 2.838   z -8.188
 node no 300090             x 43.75   y 2.942   z -7.938
 node no 300091             x 44.25   y 3.050   z -7.680
 node no 300092             x 44.75   y 3.161   z -7.414
-node no 300093             x 45.25   y 3.250   z -7.200
+node no 300093             x 45.14   y 3.250   z -7.200
 node no 300094             x 45.75   y 3.392   z -6.859
 node no 300095             x 46.25   y 3.513   z -6.569
 node no 300096             x 46.75   y 3.637   z -6.272
@@ -470,11 +463,22 @@ node no 300111             x 54.25   y 5.893   z -0.857
 node no 300112             x 54.75   y 6.070   z -0.432
 
 //teznik  1
-node no (406043 412043 1000)  x 20.25  y (1.750 0.5)  z -11.107
-//teznik  1
-node no (406058 412058 1000)  x 27.75  y (1.750 0.5)  z -12.000
-//teznik  1
-node no (406073 412073 1000)  x 35.25  y (1.750 0.5)  z -11.107
+node no (408033 410033 1000)  x 15.25 y (2.750 0.5) z -9.521
+
+//teznik  2
+node no (406043 412043 1000)  x 20.25 y (1.750 0.5) z -11.107
+
+//teznik  3
+node no (406053 412053 1000)  x 25.25 y (1.750 0.5) z -11.901
+
+//teznik  4
+node no (406063 412063 1000)  x 30.25 y (1.750 0.5) z -11.901
+
+//teznik  5
+node no (406073 412073 1000)  x 35.25 y (1.750 0.5) z -11.107
+
+//teznik  6
+node no (408083 410083 1000)  x 40.25 y (2.750 0.5) z -9.521
 
 !*!Label Podluznice
 grp 1
@@ -513,11 +517,9 @@ beam no (16113 16114 1) NA (116113 1) NE (116114 1) NCS 1   ZA 0.2500 ZE 0.2500
 grp 2
 //poprzecznice
 //glowna lewa
-beam no (201 202 1) NA (101002 1000) NE (102002 1000) NCS 15  XA -0.2425 ZA 0.2500 XE -0.2425 ZE 0.2500
-beam no (203 204 1) NA (103002 1000) NE (104002 1000) NCS 7   ZA 0.2500 ZE 0.2500
+beam no (201 204 1) NA (101002 1000) NE (102002 1000) NCS 7   ZA 0.2500 ZE 0.2500
 beam no (205 212 1) NA (105002 1000) NE (106002 1000) NCS 9   ZA 0.1566 ZE 0.1566
-beam no (213 214 1) NA (113002 1000) NE (114002 1000) NCS 7   ZA 0.2500 ZE 0.2500
-beam no (215 216 1) NA (115002 1000) NE (116002 1000) NCS 15  XA -0.2425 ZA 0.2500 XE -0.2425 ZE 0.2500
+beam no (213 216 1) NA (113002 1000) NE (114002 1000) NCS 7   ZA 0.2500 ZE 0.2500
 
 //plyta betonowa
 beam no (405 412 1) NA (105004 1000) NE (106004 1000) NCS 10  ZA -0.0750 ZE -0.0750
@@ -798,22 +800,20 @@ beam no (11005 11012 1) NA (105110 1000) NE (106110 1000) NCS 10  ZA -0.0750 ZE 
 beam no (11105 11112 1) NA (105111 1000) NE (106111 1000) NCS 10  ZA -0.0750 ZE -0.0750
 beam no (11205 11212 1) NA (105112 1000) NE (106112 1000) NCS 10  ZA -0.0750 ZE -0.0750
 
-//glowna prawa
-beam no (11601 11602 1) NA (101114 1000) NE (102114 1000) NCS 15  XA 0.2425 ZA 0.2500 XE 0.2425 ZE 0.2500
-beam no (11603 11604 1) NA (103114 1000) NE (104114 1000) NCS 7   ZA 0.2500 ZE 0.2500
+//glowna praw
+beam no (11601 11604 1) NA (101114 1000) NE (102114 1000) NCS 7   ZA 0.2500 ZE 0.2500
 beam no (11605 11612 1) NA (105114 1000) NE (106114 1000) NCS 9   ZA 0.1566 ZE 0.1566
-beam no (11613 11614 1) NA (113114 1000) NE (114114 1000) NCS 7   ZA 0.2500 ZE 0.2500
-beam no (11615 11616 1) NA (115114 1000) NE (116114 1000) NCS 15  XA 0.2425 ZA 0.2500 XE 0.2425 ZE 0.2500
+beam no (11613 11616 1) NA (113114 1000) NE (114114 1000) NCS 7   ZA 0.2500 ZE 0.2500
 
 !*!Label Luki
 //luki
 grp 4
 beam no 1002          NA 102002     NE 200004     NCS 12
-beam no (1003 1110 1) NA (200004 1) NE (200005 1) NCS 12
+beam no (1004 1111 1) NA (200004 1) NE (200005 1) NCS 12
 beam no 1112          NA 200112     NE 102114     NCS 12
 
 beam no 2002          NA 116002     NE 300004     NCS 12
-beam no (2003 2021 1) NA (300004 1) NE (300005 1) NCS 12
+beam no (2004 2021 1) NA (300004 1) NE (300005 1) NCS 12
 beam no 2022          NA 300022     NE 200023     NCS 12
 beam no 2023          NA 200023     NE 300024     NCS 12
 beam no (2024 2091 1) NA (300024 1) NE (300025 1) NCS 12
@@ -822,68 +822,81 @@ beam no 2093          NA 200093     NE 300094     NCS 12
 beam no (2094 2111 1) NA (300094 1) NE (300095 1) NCS 12
 beam no 2112          NA 300112     NE 116114     NCS 12
 
+!*!Label teznik
+grp 3
 //teznik 1
-beam no 3005          NA 300043        NE 406043        NCS 13
-beam no (3006 3011 1) NA (406043 1000) NE (407043 1000) NCS 13
-beam no 3012          NA 412043        NE 200043        NCS 13
+beam no 3007          NA 300033        NE 408033        NCS 13
+beam no (3008 3009 1) NA (408033 1000) NE (409033 1000) NCS 13
+beam no 3010          NA 410033        NE 200033        NCS 13
 
 //teznik 2
-beam no 4005          NA 300058        NE 406058        NCS 13
-beam no (4006 4011 1) NA (406058 1000) NE (407058 1000) NCS 13
-beam no 4012          NA 412058        NE 200058        NCS 13
+beam no 4005          NA 300043        NE 406043        NCS 13
+beam no (4006 4011 1) NA (406043 1000) NE (407043 1000) NCS 13
+beam no 4012          NA 412043        NE 200043        NCS 13
 
-//teznik 2
-beam no 5005          NA 300073        NE 406073        NCS 13
-beam no (5006 5011 1) NA (406073 1000) NE (407073 1000) NCS 13
-beam no 5012          NA 412073        NE 200073        NCS 13
+//teznik 3
+beam no 5005          NA 300053        NE 406053        NCS 13
+beam no (5006 5011 1) NA (406053 1000) NE (407053 1000) NCS 13
+beam no 5012          NA 412053        NE 200053        NCS 13
+
+//teznik 4
+beam no 6005          NA 300063        NE 406063        NCS 13
+beam no (6006 6011 1) NA (406063 1000) NE (407063 1000) NCS 13
+beam no 6012          NA 412063        NE 200063        NCS 13
+
+//teznik 5
+beam no 7005          NA 300073        NE 406073        NCS 13
+beam no (7006 7011 1) NA (406073 1000) NE (407073 1000) NCS 13
+beam no 7012          NA 412073        NE 200073        NCS 13
+
+//teznik 6
+beam no 8007          NA 300083        NE 408083        NCS 13
+beam no (8008 8009 1) NA (408083 1000) NE (409083 1000) NCS 13
+beam no 8010          NA 410083        NE 200083        NCS 13
 
 !*!Label ciegna
 grp 5
 //strona prawa
-cabl NO 1  NA 200008 NE 102013 NCS 14   //1
-cabl NO 2  NA 200013 NE 102018 NCS 14   //2
-cabl NO 3  NA 200018 NE 102028 NCS 14   //3
-cabl NO 4  NA 300028 NE 102038 NCS 14   //4
-cabl NO 5  NA 300038 NE 102048 NCS 14   //5
-cabl NO 6  NA 300048 NE 102058 NCS 14   //6
-cabl NO 7  NA 300058 NE 102068 NCS 14   //7
-cabl NO 8  NA 300068 NE 102078 NCS 14   //8
-cabl NO 9  NA 300078 NE 102088 NCS 14   //9
-cabl NO 10 NA 300088 NE 102098 NCS 14   //10
+cabl NO 11 NA 200013 NE 102018 NCS 14   //11
+cabl NO 12 NA 200018 NE 102028 NCS 14   //12
+cabl NO 13 NA 300028 NE 102038 NCS 14   //13
+cabl NO 14 NA 300038 NE 102048 NCS 14   //14
+cabl NO 15 NA 300048 NE 102058 NCS 14   //15
+cabl NO 16 NA 300058 NE 102068 NCS 14   //16
+cabl NO 17 NA 300068 NE 102078 NCS 14   //17
+cabl NO 18 NA 300078 NE 102088 NCS 14   //18
+cabl NO 19 NA 300088 NE 102098 NCS 14   //19
 
-cabl NO 11 NA 102018 NE 300028 NCS 14   //11
-cabl NO 12 NA 102028 NE 300038 NCS 14   //12
-cabl NO 13 NA 102038 NE 300048 NCS 14   //13
-cabl NO 14 NA 102048 NE 300058 NCS 14   //14
-cabl NO 15 NA 102058 NE 300068 NCS 14   //15
-cabl NO 16 NA 102068 NE 300078 NCS 14   //16
-cabl NO 17 NA 102078 NE 300088 NCS 14   //17
-cabl NO 18 NA 102088 NE 200098 NCS 14   //18
-cabl NO 19 NA 102098 NE 200103 NCS 14   //19
-cabl NO 20 NA 102103 NE 200108 NCS 14   //20
+cabl NO 21 NA 102018 NE 300028 NCS 14   //21
+cabl NO 22 NA 102028 NE 300038 NCS 14   //22
+cabl NO 23 NA 102038 NE 300048 NCS 14   //23
+cabl NO 24 NA 102048 NE 300058 NCS 14   //24
+cabl NO 25 NA 102058 NE 300068 NCS 14   //25
+cabl NO 26 NA 102068 NE 300078 NCS 14   //26
+cabl NO 27 NA 102078 NE 300088 NCS 14   //27
+cabl NO 28 NA 102088 NE 200098 NCS 14   //28
+cabl NO 29 NA 102098 NE 200103 NCS 14   //29
 
 //strona prawa
-cabl NO 21 NA 300008 NE 116013 NCS 14   //21
-cabl NO 22 NA 300013 NE 116018 NCS 14   //22
-cabl NO 23 NA 300018 NE 116028 NCS 14   //23
-cabl NO 24 NA 200028 NE 116038 NCS 14   //24
-cabl NO 25 NA 200038 NE 116048 NCS 14   //25
-cabl NO 26 NA 200048 NE 116058 NCS 14   //26
-cabl NO 27 NA 200058 NE 116068 NCS 14   //27
-cabl NO 28 NA 200068 NE 116078 NCS 14   //28
-cabl NO 29 NA 200078 NE 116088 NCS 14   //29
-cabl NO 30 NA 200088 NE 116098 NCS 14   //30
+cabl NO 31 NA 300013 NE 116018 NCS 14   //31
+cabl NO 32 NA 300018 NE 116028 NCS 14   //32
+cabl NO 33 NA 200028 NE 116038 NCS 14   //33
+cabl NO 34 NA 200038 NE 116048 NCS 14   //34
+cabl NO 35 NA 200048 NE 116058 NCS 14   //35
+cabl NO 36 NA 200058 NE 116068 NCS 14   //36
+cabl NO 37 NA 200068 NE 116078 NCS 14   //37
+cabl NO 38 NA 200078 NE 116088 NCS 14   //38
+cabl NO 39 NA 200088 NE 116098 NCS 14   //39
 
-cabl NO 31 NA 116018 NE 200028 NCS 14   //31
-cabl NO 32 NA 116028 NE 200038 NCS 14   //32
-cabl NO 33 NA 116038 NE 200048 NCS 14   //33
-cabl NO 34 NA 116048 NE 200058 NCS 14   //34
-cabl NO 35 NA 116058 NE 200068 NCS 14   //35
-cabl NO 36 NA 116068 NE 200078 NCS 14   //36
-cabl NO 37 NA 116078 NE 200088 NCS 14   //37
-cabl NO 38 NA 116088 NE 300098 NCS 14   //38
-cabl NO 39 NA 116098 NE 300103 NCS 14   //39
-cabl NO 40 NA 116103 NE 300108 NCS 14   //40
+cabl NO 41 NA 116018 NE 200028 NCS 14   //41
+cabl NO 42 NA 116028 NE 200038 NCS 14   //42
+cabl NO 43 NA 116038 NE 200048 NCS 14   //43
+cabl NO 44 NA 116048 NE 200058 NCS 14   //44
+cabl NO 45 NA 116058 NE 200068 NCS 14   //45
+cabl NO 46 NA 116068 NE 200078 NCS 14   //46
+cabl NO 47 NA 116078 NE 200088 NCS 14   //47
+cabl NO 48 NA 116088 NE 300098 NCS 14   //48
+cabl NO 49 NA 116098 NE 300103 NCS 14   //49
 
 !*!Label podparcie
 grp 6
@@ -941,4 +954,378 @@ lc no (2 3 1)  titl Dodatkowe
 
 end
 
++prog sofiload urs:6
+head sila_w_wieszakach
 
+lc no 301
+cabl 5000011 type vx pa -1365
+cabl 5000021 type vx pa -1439
+
+lc no 302
+cabl 5000012 type vx pa -1083
+cabl 5000022 type vx pa -1789
+
+lc no 303
+cabl 5000013 type vx pa -1444
+cabl 5000023 type vx pa -1803
+
+lc no 304
+cabl 5000014 type vx pa -1834
+cabl 5000024 type vx pa -2006
+
+lc no 305
+cabl 5000015 type vx pa -1920
+cabl 5000025 type vx pa -1920
+
+lc no 306
+cabl 5000026 type vx pa -1834
+cabl 5000016 type vx pa -2006
+
+lc no 307
+cabl 5000027 type vx pa -1444
+cabl 5000017 type vx pa -1802
+
+lc no 308
+cabl 5000028 type vx pa -1083
+cabl 5000018 type vx pa -1789
+
+lc no 309
+cabl 5000029 type vx pa -1365
+cabl 5000019 type vx pa -1439
+
+lc no 310
+cabl 5000031 type vx pa -1506
+cabl 5000041 type vx pa -1587
+
+lc no 311
+cabl 5000032 type vx pa -1165
+cabl 5000042 type vx pa -1927
+
+lc no 312
+cabl 5000033 type vx pa -1633
+cabl 5000043 type vx pa -2039
+
+lc no 313
+cabl 5000034 type vx pa -2163
+cabl 5000044 type vx pa -2366
+
+lc no 314
+cabl 5000035 type vx pa -2156
+cabl 5000045 type vx pa -2156
+
+lc no 315
+cabl 5000046 type vx pa -2163
+cabl 5000036 type vx pa -2366
+
+lc no 316
+cabl 5000047 type vx pa -1633
+cabl 5000037 type vx pa -2039
+
+lc no 317
+cabl 5000048 type vx pa -1165
+cabl 5000038 type vx pa -1927
+
+lc no 318
+cabl 5000049 type vx pa -1507
+cabl 5000039 type vx pa -1587
+
+end
+
++prog ase urs:13
+head przeliczenie_wieszaki
+
+lc no 301 titl wieszak_11_21
+lc no 302 titl wieszak_12_22
+lc no 303 titl wieszak_13_23
+lc no 304 titl wieszak_14_24
+lc no 305 titl wieszak_15_25
+lc no 306 titl wieszak_16_26
+lc no 307 titl wieszak_17_27
+lc no 308 titl wieszak_18_28
+lc no 309 titl wieszak_19_29
+
+lc no 310 titl wieszak_31_41
+lc no 311 titl wieszak_32_42
+lc no 312 titl wieszak_33_43
+lc no 313 titl wieszak_34_44
+lc no 314 titl wieszak_35_45
+lc no 315 titl wieszak_36_46
+lc no 316 titl wieszak_37_47
+lc no 317 titl wieszak_38_48
+lc no 318 titl wieszak_39_49
+
+end
+
++prog sofiload urs:8
+head  obciazenie_tlumem
+
+//obciazenie tlumem 4.0 kN/m2
+//belka (1005001-1005114)
+let#x 1005001
+let#przypadek 1001
+
+loop 114
+
+lc #przypadek
+
+beam #x type pzz pa 1 pe 1
+
+let#przypadek #przypadek+1
+let#x    #x+1
+
+endloop
+
+//obciazenie tlumem 4.0 kN/m2
+//belka (1006001-1006114)
+let#x 1006001
+let#przypadek 1115
+
+loop 114
+
+lc #przypadek
+
+beam #x type pzz pa 2 pe 2
+
+let#przypadek #przypadek+1
+let#x    #x+1
+
+endloop
+
+//obciazenie tlumem 4.0 kN/m2
+//belka (1007001-1007114)
+let#x 1007001
+let#przypadek 1229
+
+loop 114
+
+lc #przypadek
+
+beam #x type pzz pa 2 pe 2
+
+let#przypadek #przypadek+1
+let#x    #x+1
+
+endloop
+
+//obciazenie tlumem 4.0 kN/m2
+//belka (1008001-1008114)
+let#x 1008001
+let#przypadek 1343
+
+loop 114
+
+lc #przypadek
+
+beam #x type pzz pa 2 pe 2
+
+let#przypadek #przypadek+1
+let#x    #x+1
+
+endloop
+
+//obciazenie tlumem 4.0 kN/m2
+//belka (1009001-1009114)
+let#x 1009001
+let#przypadek 1457
+
+loop 114
+
+lc #przypadek
+
+beam #x type pzz pa 2 pe 2
+
+let#przypadek #przypadek+1
+let#x    #x+1
+
+endloop
+
+//obciazenie tlumem 4.0 kN/m2
+//belka (1010001-1010114)
+let#x 1010001
+let#przypadek 1571
+
+loop 114
+
+lc #przypadek
+
+beam #x type pzz pa 2 pe 2
+
+let#przypadek #przypadek+1
+let#x    #x+1
+
+endloop
+
+//obciazenie tlumem 4.0 kN/m2
+//belka (1011001-1011114)
+let#x 1011001
+let#przypadek 1685
+
+loop 114
+
+lc #przypadek
+
+beam #x type pzz pa 2 pe 2
+
+let#przypadek #przypadek+1
+let#x    #x+1
+
+endloop
+
+//obciazenie tlumem 4.0 kN/m2
+//belka (1012001-1012114)
+let#x 1012001
+let#przypadek 1799
+
+loop 114
+
+lc #przypadek
+
+beam #x type pzz pa 2 pe 2
+
+let#przypadek #przypadek+1
+let#x    #x+1
+
+endloop
+
+//obciazenie tlumem 4.0 kN/m2
+//belka (1013001-1013114)
+let#x 1013001
+let#przypadek 1913
+
+loop 114
+
+lc #przypadek
+
+beam #x type pzz pa 1 pe 1
+
+let#przypadek #przypadek+1
+let#x    #x+1
+
+endloop
+
+end
+
++prog ase urs:7
+head przeliczenie_obc_tlumem
+
+lc no (1001 2026 1) titl Tlum
+
+end
+
++prog sofiload urs:10
+head obciazenie_wiatrem
+
+
+lc 4 //wiatr pelny dzialajacy na luk
+//wartosc obciazenia 2.5 kN/m2, wypadkowa w srodku przekroju
+beam 4001002             type pyy pa 0.746 pe 0.746
+beam (4001004 4001022 1) type pyy pa 0.746 pe 0.746
+beam (4002023 4002092 1) type pyy pa 0.746 pe 0.746
+beam (4001093 4001111 1) type pyy pa 0.746 pe 0.746
+beam 4001112             type pyy pa 0.746 pe 0.746
+
+beam 4002002             type pyy pa 0.373 pe 0.373
+beam (4002004 4002022 1) type pyy pa 0.373 pe 0.373
+beam (4001023 4001092 1) type pyy pa 0.373 pe 0.373
+beam (4002093 4002111 1) type pyy pa 0.373 pe 0.373
+beam 4002112             type pyy pa 0.373 pe 0.373
+
+beam (1002001 1002114 1) type pyy pa 1.625  pe 1.625
+
+lc 5 //wiatr działający na tłum
+//wartosc obciazenia 1.25 kN/m2, tlum o wysokosci 1.7 m
+//obciazony wiatrem  o wypadkowej w polowie wysokosci
+beam 4001002             type pyy pa 0.373 pe 0.373
+beam (4001004 4001022 1) type pyy pa 0.373 pe 0.373
+beam (4002023 4002092 1) type pyy pa 0.373 pe 0.373
+beam (4001093 4001111 1) type pyy pa 0.373 pe 0.373
+beam 4001112             type pyy pa 0.373 pe 0.373
+
+beam 4002002             type pyy pa 0.187 pe 0.187
+beam (4002004 4002022 1) type pyy pa 0.187 pe 0.187
+beam (4001023 4001092 1) type pyy pa 0.187 pe 0.187
+beam (4002093 4002111 1) type pyy pa 0.187 pe 0.187
+beam 4002112             type pyy pa 0.187 pe 0.187
+
+beam (1002001 1002114 1) type pyy pa 2.938   pe 2.938
+
+end
+
++prog ase urs:9
+head przeliczenie_obc_wiatrem
+
+lc no 4 titl Wiatr_pomost
+lc no 5 titl Wiatr_tlum
+
+end
+
++prog maxima urs:11
+head  obwiednia
+
+//kombinacja na obciążenia obliczeniowe całkowite
+comb no 1 extr stan  base 10000  titl obliczniowe
+lc      1          type g  fact 1.2 //ciężar własny
+lc   (2 3 1)       type g  fact 1.5 //obciążenia dodatkowe
+lc   (1001 2026 1) type q  fact 1.5 //obciążenie tłumem
+lc   (4 5 1)       type q  fact 1.5 //obciążenie wiatrem
+lc   (301 318 1)   type g  fact 1   //naciag
+
+supp comb 1 extr mami etyp beam type my
+supp comb 1 extr mami etyp beam type mz
+supp comb 1 extr mami etyp beam type n
+supp comb 1 extr mami etyp cabl type n
+supp comb 1 extr mami etyp beam type vy
+supp comb 1 extr mami etyp beam type vz
+
+//kombinacja na obciążenia charakterystyczne całkowite
+comb no 2 extr stan  base 11000  titl charakterystyczne
+lc      1        type g  fact 1 //ciężar własny
+lc   (2 3 1)     type g  fact 1 //obciążenia dodatkowe
+lc   (301 318 1) type g  fact 1 //naciag
+
+supp comb 2 extr mami etyp node type uz
+
+//kombinacja na sprawdzenie ściskania w cięgnach
+comb no 3 extr stan  base 12000  titl stale
+lc    1          type g  fact 1 //ciężar własny
+lc (2 3 1)       type g  fact 1 //obciążenia dodatkowe
+lc (1001 2026 1) type q  fact 1 //obciążenie tłumem
+lc (301 318 1)   type g  fact 1 //naciag
+
+supp comb 3 extr mami etyp cabl type n
+
+//kombinacja na obciążenia charakterystyczne od obc ruchomych
+comb no 4 extr stan  base 13000  titl charakterystyczne
+lc (1001 2026 1) type q  fact 1 //obciążenie tłumem
+
+supp comb 4 extr mami etyp node type uz
+
+end
+
++prog aqb urs:12
+head   naprezenia
+
+lc (1 3 1)
+lc (1001 2026 1)
+lc (4 5 1)
+lc 10021
+lc 10022
+lc 10029
+lc 10030
+lc 10031
+lc 10032
+
+stre smod e
+
+end
+
++prog ase urs:15
+head drgania wlasne
+
+mass lc 2 prz 100
+mass lc 3 prz 100
+eige neig 30 nite 30
+
+end
+
+end
